@@ -21,7 +21,7 @@ module.exports = {
       {
         text: 'github',
         icon:"reco-github",
-        link: 'https://github.com/zhoubin-datareachable/blog',
+        link: 'https://github.com/zhoubin-datareachable',
       },
       {
         text: '留言板',
