@@ -1,6 +1,6 @@
 module.exports = {
   base: '/',
-  title: '我的笔记',
+  title: '博客',
   dest: './build',
   theme: 'reco',
   themeConfig: {
