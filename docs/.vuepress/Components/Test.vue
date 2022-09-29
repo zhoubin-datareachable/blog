@@ -55,9 +55,6 @@ export default {
 }
 .box {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.75rem;
-  width: 896px;
 }
 .content {
   flex: 1 1 auto;
@@ -112,6 +109,7 @@ export default {
   display: flex;
   flex-direction: column;
   max-width: 100%;
+  margin-top: 10px !important;
   height: 325px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: 5px;
