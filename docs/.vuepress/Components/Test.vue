@@ -14,7 +14,14 @@
           <div :class="$style.title">
             <span>screentogif-GIF制作工具</span>
           </div>
-          <div :class="$style.date">2022-9-29</div>
+          <div :class="$style.date">
+            <div>
+              <img
+                src="https://pc3.gtimg.com/softmgr/logo/48/22693_48_1464072107.png"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -26,7 +33,14 @@ export default {
   props: ["slot-key"],
   data() {
     return {
-      list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      // list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      list: [
+        { title: "QQ截图独立版", img: "QQ截图", tag: "截图" },
+        { title: "Bandizip压缩软件无广告版", img: "Bandizip", tag: "截图" },
+        { title: "IObit Uninstaller软件卸载工具", img: "IObit", tag: "截图"  },
+        { title: "Everything单文件版", img: "Everything", tag: "截图"  },
+        { title: "QQ截图独立版", img: "QQ截图", tag: "截图"  },
+      ],
     };
   },
   mounted() {
@@ -47,7 +61,13 @@ export default {
   padding: 0 17.5px;
 }
 .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
   height: 196px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
 }
 .img > img {
   height: 100%;
@@ -81,6 +101,10 @@ export default {
 .date {
   font-size: 12px;
   color: #6b7280;
+}
+
+.date svg {
+  fill: blue;
 }
 @media (min-width: 480px) {
   .box {
