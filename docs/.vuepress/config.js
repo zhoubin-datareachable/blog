@@ -11,6 +11,7 @@ module.exports = {
   themeConfig: {
     type: 'blog',
     subSidebar: 'auto',
+    sidebarDepth: 2,
     authorAvatar: '/avatar.jpg',
     nav: [
       {
